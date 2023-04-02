@@ -79,14 +79,6 @@
     <a name="circuit" val="regfile"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(100,840)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RegWEn"/>
-    </comp>
-    <comp lib="0" loc="(100,880)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="clk"/>
-    </comp>
     <comp lib="0" loc="(1020,1010)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="x3"/>
@@ -365,6 +357,10 @@
       <a name="label" val="RegWriteData"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(140,860)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(1460,720)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="x10"/>
@@ -482,7 +478,10 @@
       <a name="label" val="x16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(270,1140)" name="Constant"/>
+    <comp lib="0" loc="(270,1140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWEn"/>
+    </comp>
     <comp lib="0" loc="(280,600)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="RegWEn"/>
@@ -1062,7 +1061,6 @@
       <a name="label" val="s0"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="1" loc="(160,860)" name="AND Gate"/>
     <comp lib="2" loc="(1180,1140)" name="Multiplexer">
       <a name="select" val="5"/>
       <a name="selloc" val="tr"/>
@@ -1214,8 +1212,6 @@
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="DON'T CHANGE THE LOCATIONS OF THE INPUTS AND OUTPUTS!"/>
     </comp>
-    <wire from="(100,840)" to="(110,840)"/>
-    <wire from="(100,880)" to="(110,880)"/>
     <wire from="(1010,240)" to="(1060,240)"/>
     <wire from="(1020,1010)" to="(1140,1010)"/>
     <wire from="(1020,1040)" to="(1140,1040)"/>
@@ -1309,6 +1305,7 @@
     <wire from="(1380,830)" to="(1510,830)"/>
     <wire from="(1380,920)" to="(1390,920)"/>
     <wire from="(140,810)" to="(200,810)"/>
+    <wire from="(140,860)" to="(170,860)"/>
     <wire from="(1440,730)" to="(1460,730)"/>
     <wire from="(1450,880)" to="(1470,880)"/>
     <wire from="(1460,720)" to="(1460,730)"/>
@@ -1328,7 +1325,6 @@
     <wire from="(1570,730)" to="(1590,730)"/>
     <wire from="(1580,880)" to="(1600,880)"/>
     <wire from="(1590,720)" to="(1590,730)"/>
-    <wire from="(160,860)" to="(170,860)"/>
     <wire from="(1600,870)" to="(1600,880)"/>
     <wire from="(1620,750)" to="(1640,750)"/>
     <wire from="(1630,730)" to="(1630,810)"/>
